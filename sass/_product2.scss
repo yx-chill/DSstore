@@ -1,0 +1,150 @@
+.p2-main {
+    width: 1110px;
+    margin: 80px auto 60px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .product1 {
+        display: none;
+    }
+
+    .p2-pic {
+        width: 730px;
+        margin: 30px 0 30px 0;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 350px;
+            height: 640px;
+        }
+    }
+
+    .info {
+        width: 350px;
+
+        .info1 {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 300;
+
+            p {
+                font-family: "PingFang TC";
+                margin-bottom: 32px;
+            }
+        }
+
+        .info2 {
+            margin-bottom: 80px;
+
+            p {
+                margin: 12px 0 8px 0;
+                button {
+                    height: 50px;
+                    width: 54.3%;
+                    font-family: "PingFang TC";
+                    line-height: 22px;
+                    color: #FFF;
+                    background-color: #916000;
+                    border: 2px solid #916000;
+                    border-radius: 0px 4px 4px 0px;
+                }
+    
+            }
+
+            input {
+                height: 50px;
+                width: 45.7%;
+                border: 1px solid #916000;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            
+            a {
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    width: 20px;
+                    height: 20px;
+                    color: #916019;
+                    margin-right: 2px;
+                }
+            }
+
+            .btn {
+                    width: 540px;
+                    height: 62px;
+                    background-color: #FFF;
+                    color: #916000;
+                    border-radius: 4px;
+            }
+        }
+
+        .info3 {
+            line-height: 24px;
+
+            a {
+                font-weight: medium;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-family: "PingFang TC";
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    img {
+        width: 730px;
+        height: 460px;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        justify-content: center;
+        margin: 40px auto 40px auto;
+
+        .product1 {
+            display: block;
+        }
+
+        .product2 {
+            display: none;
+        }
+
+        .info {
+            margin-top: 30px;
+
+            .info2 {
+                margin-bottom: 40px;
+            }
+        }
+
+        .p2-pic {
+            width: 100%;
+            flex-wrap: wrap;
+            margin: 0;
+
+            img {
+                width: 100%;
+                height: 640px;
+                margin-bottom: 16px;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 220px;
+        }
+
+        .product3 {
+            height: 460px;
+        }
+    }
+}

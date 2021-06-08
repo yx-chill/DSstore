@@ -1,0 +1,510 @@
+body {
+    font-family: "SF Pro Text";
+}
+
+a {
+    line-height: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #000;
+}
+
+.wrap {
+    max-width: 1920px;
+
+    @media(max-width:767px) {
+        max-width: 100%;
+    }
+}
+
+.header {
+    padding: 1% 21% 1% 21%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: #8D8D8D;
+    }
+
+    @media(max-width:767px) {
+        padding: 1% 0% 1% 3%;
+    }
+
+    .menu-web,
+    .menu-phone {
+        color: #8D8D8D;
+
+        li {
+            span {
+                width: 20px;
+                height: 20px;
+            }
+
+            a {
+                font-size: 20px;
+                line-height: 30px;
+                margin: 0px 32px 0px 3px;
+            }
+        }
+    }
+}
+
+.menu-web {
+    display: flex;
+    align-items: center;
+
+    @media(max-width:767px) {
+        display: none;
+    }
+}
+
+.menu-phone {
+    display: none;
+
+    @media(max-width:767px) {
+        display: flex;
+        align-items: center;
+
+        li {
+            width: 72px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                color: #8D8D8D;
+                background-color: #FFF;
+                border: none;
+            }
+        }
+    }
+}
+
+.b-menu {
+    width: 100%;
+    background-color: #707070;
+
+    li {
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FFF;
+
+        a {
+            color: #FFF;
+        }
+    }
+}
+
+.banner-img {
+    height: 870px;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true');
+    background-size: cover;
+    background-position: center center;
+    padding-right: 21%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
+
+    div {
+        width: 445px;
+        color: #FFF;
+
+        li {
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+    }
+
+    button {
+        width: 350px;
+        height: 60px;
+        border: 2px solid #FFFFFF;
+        border-radius: 30px;
+        background-color: transparent;
+        color: #FFF;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    @media(max-width:767px) {
+        height: 480px;
+        padding: 0% 4% 0% 4%;
+        margin-bottom: 40px;
+
+        div {
+            width: 92%;
+        }
+
+        button {
+            width: 92%;
+        }
+    }
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    .txt {
+        width: 555px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        width: 350px;
+    }
+
+    img {
+        width: 555px;
+        height: 555px;
+    }
+
+    @media(max-width:767px) {
+        margin-bottom: 40px;
+
+        .txt {
+            width: 100%;
+        }
+
+        ul {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+
+    p {
+        display: flex;
+
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        margin-bottom: 16px;
+    }
+
+    a {
+        font-weight: 600;
+        color: #AC8A46;
+    }
+
+    @media(max-width:767px) {
+        width: 92%;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+}
+
+@media(max-width:767px) {
+
+    .c1,
+    .c3 {
+        flex-direction: column-reverse
+    }
+}
+
+.c4 {
+    height: 1080px;
+
+    a {
+        color: #000;
+    }
+
+    .txt {
+        flex-direction: column;
+    }
+
+    ul {
+        margin-bottom: 52px;
+    }
+
+    img {
+        height: 1080px;
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+        line-height: 30px;
+        background-color: transparent;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+
+    @media(max-width:767px) {
+        height: auto;
+
+        img {
+            height: 680px;
+        }
+    }
+}
+
+.pro {
+    width: 100%;
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0px 24px 0px;
+    margin-bottom: 60px;
+
+    .p {
+        margin-right: 30px;
+    }
+
+    .pic {
+        width: 350px;
+        height: 540px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .p1 {
+        background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index6.jpg?raw=true');
+    }
+
+    .p2 {
+        background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index7.jpg?raw=true');
+    }
+
+    .p3 {
+        background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index8.jpg?raw=true');
+        opacity: 0.3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+    }
+
+    li {
+        margin-bottom: 16px;
+    }
+
+    @media(max-width:767px) {
+        margin-bottom: 40px;
+
+        .p {
+            width: 92%;
+            margin-bottom: 32px;
+            margin: 0 auto;
+        }
+
+        .pic {
+            width: 100%;
+            height: 350px;
+            background-position: bottom center;
+        }
+    }
+}
+
+.del {
+    text-decoration: line-through;
+    color: #8D8D8D;
+    margin-left: 8px;
+}
+
+.sale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+    div {
+        width: 350px;
+        margin-left: 30px;
+    }
+
+    li {
+        margin-bottom: 16px;
+    }
+
+    img {
+        width: 730px;
+        height: 520px;
+    }
+
+    .more {
+        font-weight: 600;
+        color: #AC8A46;
+    }
+
+    @media(max-width:767px) {
+        margin-bottom: 40px;
+
+        div,
+        img {
+            width: 92%;
+            margin: 0 auto;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        img {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.sub {
+    height: 600px;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+
+    div {
+        width: 350px;
+        margin: 0 0 112px 21%;
+    }
+
+    h2 {
+        color: #8D8D8D;
+    }
+
+    p {
+        display: flex;
+    }
+
+    input {
+        width: 230px;
+        height: 60px;
+        line-height: 24;
+        font-weight: medium;
+        border: 2px solid #916000;
+        border-radius: 4px;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 60px;
+        color: #FFF;
+        background-color: #916000;
+        border: 2px solid #916000;
+        border-radius: 0px 4px 4px 0px;
+    }
+
+    @media(max-width:767px) {
+        div {
+            width: 92%;
+            margin: 0 auto 112px auto;
+        }
+
+        input {
+            width: 65.7%;
+        }
+
+        a {
+            width: 34.3%;
+        }
+    }
+}
+
+.footer {
+    height: 60px;
+    background-color: #916000;
+    padding: 20px 21% 20px 21%;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: 20px;
+
+            a {
+                color: #FFF;
+                line-height: 21px;
+                font-weight: medium;
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: 36px;
+
+            a {
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFF;
+            }
+        }
+    }
+
+    @media(max-width:767px) {
+        margin: 0 auto;
+        padding: 0 4% 0 4%;
+
+        .logo {
+            width: 100%;
+            justify-content: space-between;
+
+            li {
+                margin-right: 0;
+
+            }
+
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+}

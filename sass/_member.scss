@@ -1,0 +1,260 @@
+.mem-main {
+    width: 1110px;
+    margin: 80px auto 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .menu {
+        width: 100px;
+        margin-right: 60px;
+        font-weight: medium;
+        color: #848484;
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 28px;
+        }
+
+        li {
+            margin-bottom: 24px;
+
+        }
+
+        a {
+            line-height: 24px;
+            font-family: "PingFang TC";
+
+        }
+    }
+
+    .underline-916 {
+        border-bottom: 2px solid #916000;
+    }
+
+    .underline-818 {
+        border-bottom: 1px solid #818A91;
+    }
+
+    .fix {
+        width: 910px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .order {
+        width: 635px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .profile {
+            width: 100%;
+            font-family: "PingFang TC";
+            line-height: 22px;
+
+            h3 {
+                font-weight: medium;
+                padding-bottom: 8px;
+                margin-bottom: 16px;
+            }
+
+            div {
+                color: #818A91;
+                margin-bottom: 20px;
+
+                a {
+                    margin-right: 50px;
+                }
+
+                p {
+                    margin: 0 0 0 115px;
+                }
+            }
+
+            input,
+            select {
+                height: 38px;
+                border: 1px solid #CED4DA;
+                border-radius: 4px;
+                color: #818A91;
+            }
+
+            input {
+                width: 350px;
+            }
+
+            select {
+                width: 160px;
+                margin: 0 8px 8px 0;
+            }
+
+            button {
+                width: 160px;
+                height: 38px;
+                color: #FFF;
+                background-color: #916000;
+                border: 1px solid #916000;
+                border-radius: 4px;
+                margin: 8px 0 0 115px;
+            }
+
+            .chk {
+                width: 15px;
+                height: 15px;
+                background-color: #916000;
+            }
+        }
+
+        .edit {
+            width: 100%;
+
+            h3 {
+                margin-bottom: 16px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 20px;
+                }
+
+                input {
+                    width: 350px;
+                    height: 38px;
+                    margin-left: 47px;
+                    border: 1px solid #CED4DA;
+                    border-radius: 4px;
+                }
+            }
+
+            button {
+                width: 160px;
+                height: 38px;
+                line-height: 22px;
+                color: #FFF;
+                background-color: #916000;
+                border: 1px solid #916000;
+                border-radius: 4px;
+                margin-left: 95px;
+            }
+
+            .chkpsw {
+                margin-left: 31px;
+            }
+        }
+    }
+
+    .num {
+        width: 255px;
+
+        .num-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+
+            span {
+                margin-right: 5px;
+            }
+        }
+
+        table {
+            line-height: 24px;
+            font-family: "PingFang TC";
+            color: #818A91;
+
+            tr {
+                height: 32px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            font-family: "PingFang TC";
+            color: #A5A5A5;
+        }
+    }
+
+    @media (max-width: 767px) {
+        width: 92%;
+        margin: 40px auto 40px auto;
+
+        .menu {
+            width: 100%;
+            margin: 0 0 40px 0;
+
+            h2 {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .fix {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+
+
+            .order {
+                justify-content: center;
+
+                .profile {
+                    width: 100%;
+
+                    div {
+
+                        a {
+                            margin-right: 25px;
+                        }
+
+                        p {
+                            margin-left: 90px;
+                        }
+                    }
+
+                    select {
+                        width: 170px;
+
+                        .w160 {
+                            width: 160px;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    input {
+                        width: 68%;
+                    }
+
+                    .chk {
+                        width: 15px;
+                        height: 15px;
+                        background-color: #916000;
+                    }
+                }
+
+                .edit {
+                    input {
+                        width: 68%;
+                    }
+                }
+            }
+        }
+
+        .num {
+            width: 100%;
+            margin-bottom: 40px;
+            table {
+                width: 40%;
+            }
+        }
+    }
+}

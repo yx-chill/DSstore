@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <link rel="stylesheet" href="sass/all.css">
+    <title>DSmember</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <a href="#"><img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume.png?raw=true"
+                    alt="LOGO圖片"></a>
+            <ul class="menu-web">
+                <li><span class="material-icons">store</span><a href="DSproduct.html">Product</a></li>
+                <li><span class="material-icons">account_circle</span><a href="DSlogin.html">log in</a></li>
+                <li><span class="material-icons">favorite</span><a>Wishlist</a></li>
+                <li><span class="material-icons">shopping_cart</span><a>Cart(3)</a></li>
+            </ul>
+            <ul class="menu-phone">
+                <li><span class="material-icons">shopping_cart</span></li>
+                <li><button data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                        aria-controls="collapseExample"><span class="material-icons">menu</span></button></li>
+            </ul>
+        </div>
+        <ul class="b-menu collapse" id="collapseExample">
+            <li><a href="DSproduct.html">Product</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="DSmember.html">Mypage</a></li>
+        </ul>
+        <div class="banner">
+            <ul>
+                <li><a>CHANEL</a></li>
+                <li><a>Jo Malone</a></li>
+                <li><a>Curology</a></li>
+                <li><a>Dior</a></li>
+                <li><a>Chloe</a></li>
+                <li><a>ZARA</a></li>
+            </ul>
+        </div>
+        <div class="mem-main">
+            <div class="menu">
+                <h2>會員中心</h2>
+                <ul>
+                    <li class="underline-916"><a>會員資料修改</a></li>
+                    <li><a>訂單查詢</a></li>
+                    <li><a>退／換貨申請</a></li>
+                </ul>
+            </div>
+            <div class="fix">
+                <div class="order">
+                    <div class="profile">
+                        <h3 class="underline-818">個人資料修改</h3>
+                        <div class="account"><a>會員帳號</a><a>email@example.com</a></div>
+                        <div class="name"><a>會員姓名</a><input type="text"></div>
+                        <div class="gender"><a>會員性別</a><select>
+                                <option value="">男</option>
+                                <option value="">女</option>
+                            </select></div>
+                        <div class="email"><a>電子信箱</a><input type="text" placeholder="email@example.com"></div>
+                        <div class="phonenum"><a>手機號碼</a><input type="text"></div>
+                        <div class="Contact"><a>聯絡地址</a><select>
+                                <option value="">台灣及離島</option>
+                            </select>
+                            <p><select>
+                                    <option class="w160">高雄市</option>
+                                </select><select>
+                                    <option class="w160">鹽埕區</option>
+                                </select></p>
+                            <p><input type="text" placeholder="請輸入地址"></p>
+                            <p><input class="chk" type="checkbox" checked>我願意收到最新優惠情報</p>
+                        </div>
+                        <div class="delivery">
+                            <a>聯絡地址</a><select>
+                                <option value="">台灣及離島</option>
+                            </select>
+                            <p><select>
+                                    <option class="w160">高雄市</option>
+                                </select><select>
+                                    <option class="w160">鹽埕區</option>
+                                </select></p>
+                            <p><input type="text" placeholder="請輸入地址"></p><button>確定修改</button>
+                        </div>
+                    </div>
+                    <div class="edit">
+                        <h3 class="underline-818">修改密碼</h3>
+                        <ul>
+                            <li>
+                                <p><a>舊密碼</a><input type="text"></p>
+                            </li>
+                            <li>
+                                <p><a>新密碼</a><input type="text"></p>
+                            </li>
+                            <li>
+                                <p><a>確認密碼</a><input type="text" class="chkpsw"></p>
+                            </li>
+                        </ul>
+                        <button>變更密碼</button>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="num-title">
+                        <span class="material-icons">account_circle</span>
+                        <a>會員編碼</a>
+                        <span>T00020080615</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="100">購物車</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>我的收藏</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>完成訂單</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>會員紅利</td>
+                            <td>2680</td>
+                        </tr>
+                        <tr>
+                            <td>邀請碼</td>
+                            <td>TK2075</td>
+                        </tr>
+                    </table>
+                    <p>新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <ul class="logo">
+                <li><a href="DShome.html"><img
+                            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfumewhite.png?raw=true"
+                            alt="LOGO圖片"></a></li>
+                <li><a>© 2020. All Rights Reserved.</a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="DSproduct.html">Product</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
